@@ -1,0 +1,25 @@
+package Testonline7;
+
+import java.util.Scanner;
+
+public class squareofodddigit {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number");
+		int num=sc.nextInt();
+		int square=0;
+		while(num>0) {
+			int n=num%10;
+			if(n%2!=0) {
+				System.out.println("Odd number "+ n);
+				square=n*n;
+				System.out.println("Square "+square);
+			}
+			num=num/10;
+			System.out.println();
+		}
+		
+	}
+	
+
+}
