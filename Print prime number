@@ -1,0 +1,24 @@
+package Testonline7;
+
+
+
+public class primenyumber {
+	public static void main(String[] args) {
+		int count=0,num=2;
+		while(count<20) {
+			int div=0;
+			for(int k=2;k<=num/2;k++) {
+				if(num % k==0) {
+		     	div=1;
+					break;
+				}
+			}
+			if(div==0) {
+				System.out.print(num+" ");
+				count++;
+			}
+			num++;
+		}
+	}
+	}
+	
