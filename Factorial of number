@@ -1,0 +1,19 @@
+package Testonline7;
+
+import java.util.Scanner;
+
+public class factorial {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter number");
+		int num=sc.nextInt();
+		int fact=1;
+		for(int k=1;k<=num;k++) {
+			fact=fact*k;
+			}
+			System.out.println(fact);
+		}
+		
+	}
+
+
