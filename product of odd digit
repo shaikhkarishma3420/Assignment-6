@@ -1,0 +1,24 @@
+package Testonline7;
+
+import java.util.Scanner;
+
+public class productofodddigit {
+	public static void main(String[] args) {
+		Scanner sc =new Scanner (System.in);
+		System.out.println("Enter number");
+		int num=sc.nextInt();
+		int product=1;
+		while(num>0) {
+			int n=num%10;
+			if(n%2!=0) {
+				System.out.println("Odd number "+n);
+				product=product*n;
+				System.out.println("Product "+product);
+			}
+			num=num/10;
+			System.out.println();
+		}
+		
+	}
+
+}
