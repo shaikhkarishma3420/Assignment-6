@@ -1,0 +1,22 @@
+package Testonline7;
+
+import java.util.Scanner;
+
+public class sumofcubeeachdigit {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter number");
+		int num=sc.nextInt();
+		int cube=0,sum=0;
+		while(num>0) {
+			int n=num%10;
+			cube=n*n*n;
+			System.out.println("Cube "+cube);
+			sum=sum+cube;
+			System.out.println("Sum "+sum);
+			num=num/10;
+			System.out.println();
+		}
+	}
+
+}
